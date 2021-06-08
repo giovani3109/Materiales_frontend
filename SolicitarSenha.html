@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
         <div class="content first-content">
             <div class="first-column">
                 <h2 class="title title-primary">MATERIALES</h2>
-                <p id="feito" class="description description-primary">Seja bem-vindo(a) a nova plataforma para professores e curadores da rede de ensino infantil de Maringá!<br></br> 
-                    Aqui você pode buscar ou compartilhar com outros professores materiais educativos para aplicar aos/com seus alunos.</p>
-            </div>    
+                <p id="feito" class="description description-primary">Seja bem-vindo(a) a nova plataforma para
+                    professores e curadores da rede de ensino infantil de Maringá!<br></br>
+                    Aqui você pode buscar ou compartilhar com outros professores materiais educativos para aplicar
+                    aos/com seus alunos.</p>
+            </div>
             <div class="second-column">
                 <h2 class="title title-recuperar">Solicitar nova senha</h2>
                 <div class="social-media">
@@ -25,20 +29,22 @@
                     <label class="label-input" for="">
                         <i class="far fa-user icon-modify"></i>
                         <input type="text" placeholder="Matricula">
-                    </label>    
-                    <td class="btnDoc"><button type="button" class="btn btn2 btn-second" onClick="solicitarSenha(this)" onclick="funcao()">Solicitar senha</button></td>
+                    </label>
+                    <td class="btnDoc"><button type="button" class="btn btn2 btn-second" onClick="solicitarSenha(this)"
+                            onclick="funcao()">Solicitar senha</button></td>
                 </form>
             </div><!-- second column -->
         </div><!-- first content -->
 
         <!-- SCRIPT -->
         <script>
-            solicitarSenha = (elemento)=>{
-            elemento.textContent = "Feito!";
-            document.getElementById("feito").innerHTML = "<br><b>Solicitação feita com sucesso! <br>Passo a passo: <br>1° Acesse sua conta de email <br>2° Abra o nosso email <br>3° Clique no link enviado <br>4° Você será redirecionado para a nossa página ";
-        }
+            solicitarSenha = (elemento) => {
+                elemento.textContent = "Feito!";
+                document.getElementById("feito").innerHTML = "<br><b>Solicitação feita com sucesso! <br>Passo a passo: <br>1° Acesse sua conta de email <br>2° Abra o nosso email <br>3° Clique no link enviado <br>4° Você será redirecionado para a nossa página ";
+            }
         </script>
-        <script src="js/app.js"></script>
+        <script src="app.js"></script>
 
 </body>
+
 </html>
