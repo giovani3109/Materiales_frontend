@@ -1,81 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="styletela.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 
-<body>
-    <header style="background-color: #3a55e3;"
-        class="d-flex align-items-center justify-content-around py-3 mb-4 border-bottom">
-        <img src="Logo.png" width="200">
 
-        <button class="btn-second btn-sm my-2" style="background-color: #008E21;" type="submit">
-            Meus materiais
-        </button>
+<body class="d-flex flex-column" style="background-color: #F0F0F7;">
+    <header style="background-color: #3a55e3;">
+        <div class="d-flex col-6 align-items-center justify-content-between offset-3 p-3">
+            <img src="Logo.png" width="200">
 
-    </header>
-    <div class="feed-item-body mt-10 m-width-20 post-body">
-        <div class="col-lg-10 offset-lg-1">
-            <p>
-            <div class="card w-100" style="width: 18rem;">
-                </p>
-                <div class="card-body">
-                    <form class="row g-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Titulo">
-                        </div>
-                        <div class="col-md-6">
-
-                            <select id="inputState" class="form-select">
-                                <option selected>Matéria</option>
-                                <option>Português</option>
-                                <option>História</option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-
-                            <select id="inputState" class="form-select">
-                                <option selected>Ano</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-                    </form>
-
-                    <div class="feed-item-body mt-10 m-width-20 post-body">
-                        <p><b> Como devo escrever meu material educativo?</b></p>
-                        <p> 1. Comece com um breve resumo do material educativo.</p>
-                        <p> 2. Explique-o detalhadamente.</p>
-                        <p> 3. Aponte e explique como o material educativo ajuda a desenvolver no aluno (ex: coordenação
-                            motora, raciocinio lógico, ...).</p>
-                        <p> 4. Anexe arquivos, podendo ser o modelo do material educativo para imprimir, vídeos e/ou
-                            fotos das crianças realizando o material educativo, ...</p>
-                    </div>
-                    <div class="input-group">
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                      </div>
-                      <button type="button" class="btnPublicar btn-success btn-lg btn-block">Publicar Material</button>
-
-                </div>
-               
-            </div>
+            <button class="btn btn-second" style="background-color: #008E21;" type="submit">
+                Meus materiais
+            </button>
         </div>
-        
+    </header>
 
+    <div class="card col-6 offset-3 mt-5 mb-5" style="border-radius: 10px;">
+        <div class="card-body col-12">
+            <form>
+                <input type="text" class="form-control" placeholder="Titulo">
+                <div class="row mb-3 mt-3">
+                    <div class="col-6">
+                        <select id="inputState" class="form-select">
+                            <option selected>Matéria</option>
+                            <option>Português</option>
+                            <option>História</option>
+                            <option>Matemática</option>
+                            <option>História</option>
+                            <option>História</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <select id="exampleFormControlSelect1" class="form-select">
+                            <option selected>Ano</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                <div class="input-group mb-3 mt-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile02">
+                        <label class="custom-file-label" for="inputGroupFile02"
+                            aria-describedby="inputGroupFileAddon02">
+                            Choosefile
+                        </label>
+                    </div>
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+                    </div>
+                </div>
+            </form>
+            <button type="button" class="btnPublicar btn-success btn btn-block">Publicar Material</button>
+        </div>
     </div>
-
-
 </body>
 
 </html>
