@@ -70,3 +70,18 @@
     border: 1px solid hsl(113, 100%, 50%);
     color: hsl(113, 100%, 50%);
 }
+
+.btnPublicar {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 400px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+    left:10%;
+}
